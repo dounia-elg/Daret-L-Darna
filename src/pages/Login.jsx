@@ -3,10 +3,15 @@ import API from "../api/axios";
 import InputField from "../components/InputField";
 import Button from "../components/Button";
 import photoHero from "../assets/home/photo5.avif";
+import { useDispatch } from 'react-redux';
+import { loginSuccess } from '../store/slices/authSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -18,12 +23,19 @@ const Login = () => {
 
     try {
       const res = await API.post("/auth/login", form);
-      console.log("User logged in:", res.data);
-      if (res.data.token) {
-        localStorage.setItem("token", res.data.token);
-      }
-      alert("Connexion réussie!!!");
-      window.location.href = "/";
+      // console.log("User logged in:", res.data);
+      // if (res.data.token) {
+      //   localStorage.setItem("token", res.data.token);
+      // }
+      
+      dispatch(loginSuccess({
+      user: res.data.user,
+      token: res.data.token
+    }));
+
+    alert("Connexion réussie!!!");
+    navigate("/");
+
     } catch (err) {
       setError(err.response?.data?.message || "Erreur serveur");
     }
