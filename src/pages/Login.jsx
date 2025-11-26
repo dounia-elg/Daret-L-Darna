@@ -43,9 +43,9 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-linear-to-b from-[#fff8ef] to-[#f2e7da] px-4 py-10 text-[#2d1e16]">
-      <div className="mx-auto flex max-w-6xl flex-col overflow-hidden rounded-[32px] border border-[#f0e4d9] bg-white/70 shadow-2xl shadow-[#d6c2b4]/50 lg:flex-row">
+      <div className="mx-auto flex max-w-6xl flex-col overflow-hidden rounded-[4xl] border border-[#f0e4d9] bg-white/70 shadow-2xl shadow-[#d6c2b4]/50 lg:flex-row">
         <aside
-          className="relative flex-1 min-h-[320px] bg-cover bg-center"
+          className="relative flex-1 min-h-80 bg-cover bg-center"
           style={{
             backgroundImage: `linear-gradient(120deg, rgba(13, 9, 6, 0.4), rgba(13, 9, 6, 0.1)), url(${photoHero})`,
           }}

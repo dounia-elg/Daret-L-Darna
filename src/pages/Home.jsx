@@ -172,7 +172,7 @@ const Home = () => {
 
       {/* Program highlights */}
       <section className="mx-auto max-w-6xl px-6 pb-16">
-        <div className="rounded-[32px] bg-white/80 p-8 shadow-2xl shadow-[#d6c2b4]/60 backdrop-blur">
+        <div className="rounded-[4xl] bg-white/80 p-8 shadow-2xl shadow-[#d6c2b4]/60 backdrop-blur">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-xs uppercase tracking-[0.5em] text-[#9c6b5c]">
@@ -269,7 +269,7 @@ const Home = () => {
 
       {/* Parcours utilisateurs */}
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rounded-[32px] border border-[#f0e4d9] bg-white/80 p-8 shadow-xl shadow-[#d6c2b4]/50 backdrop-blur">
+        <div className="rounded-[4xl] border border-[#f0e4d9] bg-white/80 p-8 shadow-xl shadow-[#d6c2b4]/50 backdrop-blur">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-xs uppercase tracking-[0.5em] text-[#9c6b5c]">
