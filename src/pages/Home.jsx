@@ -57,6 +57,12 @@ const Home = () => {
           </div>
           <div className="flex gap-3">
             <Link
+              to="/profile"
+              className="rounded-full border border-[#c09a89] px-5 py-2 text-sm font-medium text-[#3c2a22] transition hover:bg-[#f3e5d8]"
+            >
+              Mon Profil
+            </Link>
+            <Link
               to="/register"
               className="rounded-full border border-[#c09a89] px-5 py-2 text-sm font-medium text-[#3c2a22] transition hover:bg-[#f3e5d8]"
             >
