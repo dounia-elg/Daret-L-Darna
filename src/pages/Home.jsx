@@ -6,6 +6,7 @@ import photo3 from "../assets/home/photo3.avif";
 import photo4 from "../assets/home/photo4.avif";
 import photo5 from "../assets/home/photo5.avif";
 import photo6 from "../assets/home/photo6.avif";
+import { Link } from "react-router-dom";
 
 const heroImages = [photo1, photo2, photo3];
 
@@ -55,12 +56,24 @@ const Home = () => {
             
           </div>
           <div className="flex gap-3">
-            <button className="rounded-full border border-[#c09a89] px-5 py-2 text-sm font-medium text-[#3c2a22] transition hover:bg-[#f3e5d8]">
+            <Link
+              to="/profile"
+              className="rounded-full border border-[#c09a89] px-5 py-2 text-sm font-medium text-[#3c2a22] transition hover:bg-[#f3e5d8]"
+            >
+              Mon Profil
+            </Link>
+            <Link
+              to="/register"
+              className="rounded-full border border-[#c09a89] px-5 py-2 text-sm font-medium text-[#3c2a22] transition hover:bg-[#f3e5d8]"
+            >
               Créer un compte
-            </button>
-            <button className="rounded-full bg-[#9c6b87] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-[#9c6b87]/30 transition hover:opacity-90">
+            </Link>
+            <Link
+              to="/login"
+              className="rounded-full bg-[#9c6b87] px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-[#9c6b87]/30 transition hover:opacity-90"
+            >
               Se connecter
-            </button>
+            </Link>
           </div>
         </div>
       </header>
@@ -165,7 +178,7 @@ const Home = () => {
 
       {/* Program highlights */}
       <section className="mx-auto max-w-6xl px-6 pb-16">
-        <div className="rounded-[32px] bg-white/80 p-8 shadow-2xl shadow-[#d6c2b4]/60 backdrop-blur">
+        <div className="rounded-[4xl] bg-white/80 p-8 shadow-2xl shadow-[#d6c2b4]/60 backdrop-blur">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-xs uppercase tracking-[0.5em] text-[#9c6b5c]">
@@ -262,7 +275,7 @@ const Home = () => {
 
       {/* Parcours utilisateurs */}
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rounded-[32px] border border-[#f0e4d9] bg-white/80 p-8 shadow-xl shadow-[#d6c2b4]/50 backdrop-blur">
+        <div className="rounded-[4xl] border border-[#f0e4d9] bg-white/80 p-8 shadow-xl shadow-[#d6c2b4]/50 backdrop-blur">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-xs uppercase tracking-[0.5em] text-[#9c6b5c]">
